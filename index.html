@@ -14,9 +14,19 @@
     <div class="box">
         <div id="line" class="line"></div>
     </div>
-    <p>初始化</p>
-    <button onclick="clickButton()">触发点击</button>
-    <script src="./index.js"></script>
+    <br />
+    <p>微任务阻塞渲染测试：</p>
+    <p id="intl">初始化</p>
+    <button onclick="clickButton()">触发元素修改和 5s 连续的微任务</button>
+    <br />
+    <p>页面响应测试：</p>
+    <input id="number" type="number">
+    <br />
+    <p>开始一个 5s 的任务：</p>
+    <p id="times">计算次数为：</p>
+    <button onclick="blockFunction()">不使用 Web Workers</button>
+    <button id="useWebWorker">使用 Web Workers</button>
+    <script src="index.js"></script>
 </body>
 
 </html>
