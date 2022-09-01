@@ -92,7 +92,7 @@ setTimeout(() => {
 
 console.log('script end');
 
-// 一个关于执行顺序的小demo
+// 一个关于执行顺序的小 demo
 setTimeout(() => {
     console.log("0");
     new Promise((resolve) => {
